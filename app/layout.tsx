@@ -1,6 +1,3 @@
-"use client";
-
-import { ThirdwebProvider } from "thirdweb/react";
 import { PropsWithChildren } from "react";
 
 export const metadata = {
@@ -11,9 +8,7 @@ export const metadata = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en">
-      <body>
-        <ThirdwebProvider activeChain="ethereum">{children}</ThirdwebProvider>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
